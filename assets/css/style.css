@@ -10,6 +10,7 @@ h1{
     font-size: 5rem;
     color: rgb(3, 182, 27);
     margin-bottom: 4rem;
+    text-shadow: 1px 1px #19255e;
 }
 .container{
     width: 100vw;
