@@ -43,11 +43,12 @@ h1{
     background: linear-gradient(90deg, rgb(72, 150, 13) 0%, rgba(16,209,70,1) 100%, rgba(51,212,235,1) 100%);
     border-radius: 5px;
 }
-.btn :hover{
+.btn:hover{
     cursor: pointer;
     box-shadow: 0 0.5rem 1.5rem;
-    font-size: 150%;
-    opacity: 50%;
+    opacity: 80%;
+    transition: transform 100ms;
+    transform: scale(1.05);
 
 }
 
