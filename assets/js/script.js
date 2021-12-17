@@ -10,6 +10,7 @@ let questionCounter = 0
 let currentScore = 0
 let remainingQuestions = []
 
+/** adding the questions and some filler template questions below, the answer is to call the choice in the array based on its number**/
 let questions = [
     {
     question: "Who is the current UFC Welterweight Champion?"
@@ -86,3 +87,25 @@ let questions = [
                                     },
 
 ]
+
+const scorePoints = 100
+const maxQuestions = 10
+/** starts the quiz with a variables of questionCounter and score set to 0 and calls the following function to get a new question**/
+startQuiz = () => {
+    quistionCounter = 0
+    score = 0
+    remainingQuestions = [...questions]
+    getNewQuestion()
+}
+/** grabs a new question if the remaining questions is 0 or the question counter is higher than the set maxQuestions variable (10) it will store your score and return you to the finished page**/
+getNewQuestion = () => {
+    if(remainingQuestions.length === 0 || questionCounter > maxQuestions )
+        localStorage.setItem('recentScore', score)
+        return window.location.assign('/finished.html')
+}
+
+questionCounter++ 
+/** Adds text to the progress bar with your current question of the max questions eg 5 of 10**/
+progressBarText.innerText = `Question ${questionCounter} of ${maxQuestions}`
+/** gives the progress bar a width with the percentage of progress ie questions/maxQuestions**/
+progressBarFull.style.width = `${(questionCounter/maxQuestions) * 100}%`
