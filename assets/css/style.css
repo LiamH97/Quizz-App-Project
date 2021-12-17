@@ -10,7 +10,6 @@ background-color: rgb(4, 216, 198);
 h1{
     font-size: 5rem;
     color: rgb(3, 182, 27);
-    margin-bottom: 4rem;
     text-shadow: 1px 1px #19255e;
 }
 
@@ -58,7 +57,7 @@ h1{
 .choice-container {
     display: flex;
     background: #fff;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.2rem;
     width: 100%;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -72,10 +71,18 @@ h1{
 #question{
 
     font-size: 150%;
-    padding-bottom: 2rem;
     color: rgb(3, 182, 27);
     text-shadow: 1px 1px #19255e;
     font-weight: 1000;
+    padding-bottom: 2rem;
+}
+.hud-item h1,
+.hud-item p {
+    display: inline;
+}
+
+.hud-item{
+    padding-bottom: 2rem;
 }
 
 .hud-prefix{
@@ -120,13 +127,21 @@ h1{
     background-color: rgb(138, 40, 1);
 }
 
+#progress{
+    width: 25rem;
+    height: 3rem;
+    border: 0.3rem solid #fff;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
 
 @media screen and (max-width: 1500px){
     .choice-container{
     min-width: 50rem;
     }
     .container{
-        min-width: 35rem;
+        width: 100%;
         }
     .question {
         min-width: 10rem
@@ -135,6 +150,10 @@ h1{
 @media screen and (max-width: 950px){
     .choice-container{
     min-width: 35rem;
+    }
+
+        .container{
+    min-width: 25rem;
     }
     .question {
         min-width: 10rem

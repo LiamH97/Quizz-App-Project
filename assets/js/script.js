@@ -22,7 +22,7 @@ let questions = [
     },
 
     {
-        question: "Who won the 2021 Formula One World Driver's title in 2021?",
+        question: "Who won the 2021 Formula One World Driver's title?",
         choice1: "Carlos Sainz",
         choice2: "Lewis Hamilton",
         choice3: "Max Verstappen",
