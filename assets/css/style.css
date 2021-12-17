@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Press+Start+2P&display=swap');
+
 :root {
 background-color: rgb(4, 216, 198);
 }
@@ -12,6 +13,7 @@ h1{
     margin-bottom: 4rem;
     text-shadow: 1px 1px #19255e;
 }
+
 .container{
     width: 100vw;
     height: 100vh;
@@ -20,7 +22,6 @@ h1{
     align-items: center;
     max-width: 80rem;
     margin: 0% auto;
-    padding: 2rem;
 }
 
 .flex-column {
@@ -57,11 +58,32 @@ h1{
 .choice-container {
     display: flex;
     background: #fff;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
     width: 100%;
-    border-radius: 5px;
-    font-size: 2rem;
+    border-radius: 8px;
+    font-size: 1.5rem;
     min-width: 80rem;
+}
+.hud-main-text{
+    font-size: 2rem;
+    padding-left: 2rem;
+    
+}
+#question{
+
+    font-size: 120%;
+    padding-bottom: 2rem;
+    color: rgb(3, 182, 27);
+    text-shadow: 1px 1px #19255e;
+    font-weight: 1000;
+}
+
+.hud-prefix{
+
+    font-size: 110%;
+    font-weight: 1000;
+    padding-left: 2rem;
+    
 }
 
 .choice-container:hover{
@@ -88,4 +110,28 @@ h1{
 }
 .hidden{
     display: none;
+}
+
+.correct {
+    background-color: rgb(71, 226, 10);
+}
+
+@media screen and (max-width: 1500px){
+    .choice-container{
+    min-width: 50rem;
+    }
+    .container{
+        min-width: 35rem;
+        }
+    .question {
+        min-width: 10rem
+    }
+}
+@media screen and (max-width: 950px){
+    .choice-container{
+    min-width: 35rem;
+    }
+    .question {
+        min-width: 10rem
+    }
 }

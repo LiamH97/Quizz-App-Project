@@ -123,10 +123,29 @@ choices.forEach(choice => {
     const number = choice.dataset['number']
     choice.innerText = currentQuestion['choice' + number]
 })
-
+/*Removes 1 number from the number of remaining questions */
 remainingQuestions.splice(questionsIndex, 1)
 
+acceptAnswers = true
+
 }
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e =>{
+        if(!acceptAnswers) return
+
+        acceptAnswers = false
+        const clickedChoice = e.target
+        const clickedAnswer = clickedChoice.dataset['number']
+
+        let classApplied = clickedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+        if(classApplied =='correct'){
+            incrementScore(scorePoints)
+        }
+    } )
+
+})
 
 
 
