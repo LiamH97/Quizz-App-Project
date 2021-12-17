@@ -71,7 +71,7 @@ h1{
 }
 #question{
 
-    font-size: 120%;
+    font-size: 150%;
     padding-bottom: 2rem;
     color: rgb(3, 182, 27);
     text-shadow: 1px 1px #19255e;
@@ -115,6 +115,11 @@ h1{
 .correct {
     background-color: rgb(71, 226, 10);
 }
+
+.incorrect {
+    background-color: rgb(138, 40, 1);
+}
+
 
 @media screen and (max-width: 1500px){
     .choice-container{
