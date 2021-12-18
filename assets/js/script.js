@@ -52,7 +52,7 @@ let questions = [
                         choice2: "Mark Williams",
                         choice3: "Judd Trump",
                         choice4: "Ronnie O'Sullivan",
-                        answer: 4,
+                        answer: 1,
                         },
                         {
                             question: "Which boxer defeated Anthony Joshua taking his WBA, IBF and WBO heavyweight titles in London this year?",

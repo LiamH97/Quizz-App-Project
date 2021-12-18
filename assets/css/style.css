@@ -4,6 +4,13 @@
 background-color: rgb(4, 216, 198);
 }
 
+#hometext{
+    font-size: 1rem;
+    color: rgb(6, 25, 110);
+    font-weight: 2000;
+    text-shadow: 1px 1px #000105;
+}
+
 *{
     font-family: 'Orbitron', sans-serif;
 }
