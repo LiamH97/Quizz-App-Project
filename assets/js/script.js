@@ -3,8 +3,7 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressBarText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressFull');
-const recentScore = localStorage.getItem('mostRecentScore')
-const finalScore = document.getElementById('finalScore')
+
 
 let currentQuestion = {}
 let acceptAnswers = true
@@ -73,19 +72,19 @@ let questions = [
                                 answer: 4,
                                 },
                                 {
-                                    question: "Which boxer defeated Anthony Joshua taking his WBA, IBF and WBO heavyweight titles in London this year?",
-                                    choice1: "Tyson Fury",
-                                    choice2: "Oleksandr Usyk",
-                                    choice3: "Andy Ruiz Jr",
-                                    choice4: "Deontay Wilder",
-                                    answer: 2,
+                                    question: "Which football team won the 2021 UEFA Champion's League?",
+                                    choice1: "Manchester United",
+                                    choice2: "Real Madrid",
+                                    choice3: "Chelsea",
+                                    choice4: "PSG",
+                                    answer: 3,
                                     },
                                     {
-                                    question: "Which boxer defeated Anthony Joshua taking his WBA, IBF and WBO heavyweight titles in London this year?",
-                                    choice1: "Tyson Fury",
-                                    choice2: "Oleksandr Usyk",
-                                    choice3: "Andy Ruiz Jr",
-                                    choice4: "Deontay Wilder",
+                                    question: "Who defeated Gary Anderson to claim their first ever World Darts Championship title in 2021?",
+                                    choice1: "Michael Van Gerwin",
+                                    choice2: "Gerwyn Price",
+                                    choice3: "Adrian Lewis",
+                                    choice4: "Peter Wright",
                                     answer: 2,
                                     },
 
