@@ -4,7 +4,7 @@
 background-color: rgb(4, 216, 198);
 }
 
-#hometext{
+.smalltext{
     font-size: 1rem;
     color: rgb(6, 25, 110);
     font-weight: 2000;

@@ -3,6 +3,8 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressBarText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressBarFull = document.getElementById('progressFull');
+const recentScore = localStorage.getItem('mostRecentScore')
+const finalScore = document.getElementById('finalScore')
 
 let currentQuestion = {}
 let acceptAnswers = true

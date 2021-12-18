@@ -18,11 +18,16 @@
     <div class="container">
         <div id="home" class="flex-column flex-center">
             <h1>Quiz Complete!</h1>   
-            <p id=score>Your score was: 0</p>
+            <div class="hud-item">
+            <p class="hud-prefix">
+                Score:
+            </p>
+            <h1 class="hud-main-text" id="finalScore"> 0</h1>
+        </div>
            <a href="game.html" class="btn">Play Again<i class="fas fa-play"></i></a>
             <a href="index.html" class="btn">Home<i class="fas fa-house-user"></i></a>
         </div>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/final.js"></script>
 </body>
 </html>
