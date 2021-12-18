@@ -27,7 +27,7 @@ let questions = [
         choice2: "Lewis Hamilton",
         choice3: "Max Verstappen",
         choice4: "Valentino Rossi",
-        answer: 2,
+        answer: 3,
         },
         
             {
@@ -89,7 +89,7 @@ let questions = [
 
 ]
 
-const scorePoints = 100
+const scorePoints = 10
 const maxQuestions = 10
 /** starts the quiz with a variables of questionCounter and score set to 0 and calls the following function to get a new question**/
 startQuiz = () => {
@@ -143,9 +143,21 @@ choices.forEach(choice => {
         if(classApplied =='correct'){
             incrementScore(scorePoints)
         }
+
+        clickedChoice.parentElement.classList.add(classApplied)
+
+        setTimeout(()=> {
+            clickedChoice.parentElement.classList.remove(classApplied)
+            getNewQuestion()
+        } ,800)
     } )
 
 })
+
+incrementScore= num =>{
+    score +=num
+    scoreText,innerText = score
+}
 
 
 
