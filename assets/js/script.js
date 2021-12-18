@@ -111,7 +111,7 @@ questionCounter++
 progressBarText.innerText = `Question ${questionCounter} of ${maxQuestions}`
 
 /** gives the progress bar a width with the percentage of progress ie questions/maxQuestions**/
-progressBarFull.style.width = `${(questionCounter/maxQuestions) * 100}%`
+progressFull.style.width = `${(questionCounter/maxQuestions) * 100}%`
 
 /** gives the progress bar a width with the percentage of progress ie questions/maxQuestions**/
 const questionsIndex = Math.floor(Math.random() * remainingQuestions.length)

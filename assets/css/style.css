@@ -124,7 +124,7 @@ h1{
 }
 
 .incorrect {
-    background-color: rgb(138, 40, 1);
+    background-color: rgb(192, 62, 11);
 }
 
 #progress{
@@ -135,6 +135,14 @@ h1{
     overflow: hidden;
     margin-top: 1rem;
 }
+
+#progressFull
+{
+    height: 100%;
+    width: 0%;
+    background:rgb(71, 226, 10) ;
+}
+
 
 @media screen and (max-width: 1500px){
     .choice-container{
