@@ -5,10 +5,11 @@ background-color: rgb(4, 216, 198);
 }
 
 .smalltext{
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: rgb(6, 25, 110);
     font-weight: 2000;
     text-shadow: 1px 1px #000105;
+    padding-bottom: 2rem;
 }
 
 *{
@@ -149,7 +150,16 @@ h1{
     width: 0%;
     background:rgb(71, 226, 10) ;
 }
-
+/* Final Page CSS */
+.final-score h1,
+.final-score p {
+    display: inline;
+    color: rgb(6, 25, 110);
+    font-size: 3rem;
+}
+.final-score{
+    padding-bottom: 2rem;
+}
 
 @media screen and (max-width: 1500px){
     .choice-container{

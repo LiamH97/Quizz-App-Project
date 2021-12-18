@@ -87,6 +87,15 @@ let questions = [
                                     choice4: "Peter Wright",
                                     answer: 2,
                                     },
+                                    {
+                                        question: "Who defeated Gary Anderson to claim their first ever World Darts Championship title in 2021?",
+                                        choice1: "Michael Van Gerwin",
+                                        choice2: "Gerwyn Price",
+                                        choice3: "Adrian Lewis",
+                                        choice4: "Peter Wright",
+                                        answer: 2,
+                                        },
+    
 
 ]
 
@@ -150,7 +159,7 @@ choices.forEach(choice => {
         setTimeout(()=> {
             clickedChoice.parentElement.classList.remove(classApplied)
             getNewQuestion()
-        } ,800)
+        } ,400)
     } )
 
 })
