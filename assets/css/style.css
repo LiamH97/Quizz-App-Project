@@ -178,9 +178,24 @@ h1{
     }
 
         .container{
-    min-width: 25rem;
+    max-width: 1rem;
+    min-height: 5rem;
     }
     .question {
-        min-width: 10rem
+        max-width: 3rem
     }
 }
+@media screen and (max-width: 600px){
+    .choice-container{
+    min-width: 20rem;
+    }
+
+        .container{
+    min-width: 15rem;
+    min-height: 20rem;
+    }
+    .question {
+        max-width: 1rem
+    }
+}
+
