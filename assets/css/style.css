@@ -171,28 +171,53 @@ h1{
     .question {
         min-width: 10rem
     }
+    h1{
+        font-size: 3rem;
+    }
+    .smalltext{
+        font-size: 1rem;
+}
 }
 @media screen and (max-width: 950px){
     .choice-container{
     min-width: 35rem;
+    font-size: 1.0rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .smalltext{
+        font-size: 0.5rem;
+}
+    #progress{
+        width: 15rem;
+        height: 1.8rem;
     }
 
         .container{
     max-width: 1rem;
     min-height: 5rem;
+    font-size: 70%;
     }
     .question {
         max-width: 3rem
     }
+    
 }
 @media screen and (max-width: 600px){
     .choice-container{
     min-width: 20rem;
+    font-size: 0.7rem;
+    }
+    #progress{
+        width: 15rem;
+        height: 1.5rem;
     }
 
         .container{
     min-width: 15rem;
     min-height: 20rem;
+    font-size: 50%;
     }
     .question {
         max-width: 1rem
