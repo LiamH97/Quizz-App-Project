@@ -88,12 +88,12 @@ let questions = [
                                     answer: 2,
                                     },
                                     {
-                                        question: "Who defeated Gary Anderson to claim their first ever World Darts Championship title in 2021?",
-                                        choice1: "Michael Van Gerwin",
-                                        choice2: "Gerwyn Price",
-                                        choice3: "Adrian Lewis",
-                                        choice4: "Peter Wright",
-                                        answer: 2,
+                                        question: "Which city hosted the 2020 Olympic games in the year 2021?",
+                                        choice1: "Tokyo",
+                                        choice2: "Berlin",
+                                        choice3: "London",
+                                        choice4: "Rio De Janeiro",
+                                        answer: 1,
                                         },
     
 
