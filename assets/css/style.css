@@ -191,7 +191,7 @@ h1{
         font-size: 1.5rem;
     }
     .smalltext{
-        font-size: 0.5rem;
+        font-size: 1rem;
         text-shadow: none;
 }
 .btn{
@@ -211,6 +211,12 @@ h1{
     .question {
         max-width: 3rem
     }
+    .final-score h1,
+.final-score p {
+    display: inline;
+    color: rgb(6, 25, 110);
+    font-size: 1.5rem;
+}
     
 }
 @media screen and (max-width: 600px){
