@@ -112,7 +112,7 @@ startQuiz = () => {
 getNewQuestion = () => {
     if(remainingQuestions.length === 0 || questionCounter > maxQuestions ){
         localStorage.setItem('recentScore', score)
-        return window.location.assign('/finished.html')
+        return window.location.assign('finished.html')
     }
 
 questionCounter++ 
