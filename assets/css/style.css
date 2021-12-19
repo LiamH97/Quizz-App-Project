@@ -160,7 +160,7 @@ h1{
 .final-score{
     padding-bottom: 2rem;
 }
-
+/*Responsive styling */
 @media screen and (max-width: 1500px){
     .choice-container{
     min-width: 50rem;
@@ -177,6 +177,10 @@ h1{
     .smalltext{
         font-size: 1rem;
 }
+.btn{
+    font-size: 2rem;
+    width: 25rem;
+}
 }
 @media screen and (max-width: 950px){
     .choice-container{
@@ -188,6 +192,10 @@ h1{
     }
     .smalltext{
         font-size: 0.5rem;
+}
+.btn{
+    font-size: 2rem;
+    width: 20rem;
 }
     #progress{
         width: 15rem;
@@ -212,6 +220,10 @@ h1{
     #progress{
         width: 15rem;
         height: 1.5rem;
+    }
+    .btn{
+        font-size: 2rem;
+        width: 15rem;
     }
 
         .container{
