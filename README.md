@@ -1,12 +1,11 @@
 # 2021 Sport Quiz
 
 2021 Sport Quiz is a quiz designed to test the users' knowledge of major sporting events throughout the year of 2021.
-![Image of the home page](assets/images/homepage.jpg)
+![Image of the home page on multiple devices](assets/images/design_mockup.jpg)
 
 # Features
 - __Progress Bar__
-    - The progress bar will fill up as you complete each question. The idea for how to impliment this was taken from this youtube video:
-    https://www.youtube.com/watch?v=basf1lH1H-E&ab_channel=WebDevSimplified with my own modifications.
+    - The progress bar will fill up as you complete each question. The idea for how to impliment this was taken from [this youtube video:](https://www.youtube.com/watch?v=basf1lH1H-E&ab_channel=WebDevSimplified) with my own modifications.
 
        ![Image of the progress bar](assets/images/progress.jpg)
 
@@ -54,3 +53,25 @@ Here they can see their score and are asked if they would like to play again or 
     - An error occured when testing with the official Jigsaw validator, font-weight was set to 2000 and this attribute cannot be higher than 1000. This issue was fixed then re-committed. After this fix, no errors were found.
 - JavaScript
     - JSHint pointed out some missing semi-colons and a few un-used variables that I rectified in a commit to the repository.
+
+# Deployment
+-   The site was deployed using GitHub and GitHub pages.
+    - Each change was documented with a commit to GitHub and a description was given on each change.
+    - The site was hosted on GitHub pages.
+        - The live link for the GitHub pages site is as follows - https://liamh97.github.io/Quizz-App-Project/
+
+
+
+# Credits
+- The Progress Bar
+    - The idea for how to impliment this was taken from [this youtube video:](https://www.youtube.com/watch?v=basf1lH1H-E&ab_channel=WebDevSimplified) with my own modifications.
+## Content
+-   The content for the questions and answers was taken from my own knowlege of major sporting events this year
+- The icons in the buttons were taken from [Font Awesome ](https://fontawesome.com/)
+## Media
+-  The images used in the home page and the final page were taken from [This Open Source site](https://stock.adobe.com/)
+
+## Code 
+ - The code for localStorage to store the score and re-display your final score in the final page was taken from [This guide ](https://blog.logrocket.com/localstorage-javascript-complete-guide/)
+
+
