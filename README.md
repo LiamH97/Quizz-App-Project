@@ -32,3 +32,15 @@ Here they can see their score and are asked if they would like to play again or 
 
 ## Features to impliment in the future
  - A scoreboard of stored scores with a username display
+
+ # Testing
+
+
+ ## Validator Testing
+
+ - HTML 
+    - An error was found at line 22 in the game.html page where there was no space between attributes. This was corrected and re-committed. 
+
+- CSS
+    - An error occured when testing with the official Jigsaw validator, font-weight was set to 2000 and this attribute cannot be higher than 1000. This issue was fixed then re-committed. After this fix, no errors were found.
+    
