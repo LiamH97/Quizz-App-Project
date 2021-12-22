@@ -43,6 +43,9 @@ Here they can see their score and are asked if they would like to play again or 
     The reason this didn't work initially was a syntax error, using a comma instead of a semi-colon (scoreText,innerText > scoreText.innerText )
 -   I had an indexing issue at the end of the quiz, we weren't reaching the finish.html page. This was simply due to a file pathing mistake. I added an unnessecary '/' in the file path : '/finished.html'.
 -   The rest of my testing was based on readability and accesibility on mobile. There are a few commits explaining my changes for readibility in the CSS.
+    - I confirmed this was readable and accessible by running it through Lighthouse in devtools
+    
+    ![image of Lighthouse results](assets/images/lighthouse.jpg)
 
  ## Validator Testing
 
