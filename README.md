@@ -35,6 +35,15 @@ Here they can see their score and are asked if they would like to play again or 
 
  # Testing
 
+## User Testing
+
+- I tested the quiz after each change and had to make some changes to the code to resolve some bugs.
+    The first problems that arose were due to simple syntax errors when trying to manipulate the DOM. Creating const variables of a variable that already existed caused an error in the javascript.
+- Some misplaced brackets caused the getNewQuestion function not to co-operate initially.
+- The incrimentScore funtion didn't work initially. This was created to increase your score by manipulating the scoreText variable's inner text. 
+    The reason this didn't work initially was a syntax error, using a comma instead of a semi-colon (scoreText,innerText > scoreText.innerText )
+-   I had an indexing issue at the end of the quiz, we weren't reaching the finish.html page. This was simply due to a file pathing mistake. I added an unnessecary '/' in the file path : '/finished.html'.
+-   The rest of my testing was based on readability and accesibility on mobile. There are a few commits explaining my changes for readibility in the CSS.
 
  ## Validator Testing
 
@@ -43,4 +52,5 @@ Here they can see their score and are asked if they would like to play again or 
 
 - CSS
     - An error occured when testing with the official Jigsaw validator, font-weight was set to 2000 and this attribute cannot be higher than 1000. This issue was fixed then re-committed. After this fix, no errors were found.
-    
+- JavaScript
+    - JSHint pointed out some missing semi-colons and a few un-used variables that I rectified in a commit to the repository.

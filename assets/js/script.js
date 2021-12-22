@@ -2,14 +2,13 @@ const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressBarText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
-const progressBarFull = document.getElementById('progressFull');
+const progressFull = document.getElementById('progressFull');
 
 
-let currentQuestion = {}
-let acceptAnswers = true
-let questionCounter = 0
-let currentScore = 0
-let remainingQuestions = []
+let currentQuestion = {};
+let acceptAnswers = true;
+let questionCounter = 0;
+let remainingQuestions = [];
 
 /** adding the questions and some filler template questions below, the answer is to call the choice in the array based on its number**/
 let questions = [
@@ -97,78 +96,77 @@ let questions = [
                                         },
     
 
-]
+];
 
-const scorePoints = 10
-const maxQuestions = 10
+const scorePoints = 10;
+const maxQuestions = 10;
 /** starts the quiz with a variables of questionCounter and score set to 0 and calls the following function to get a new question**/
 startQuiz = () => {
-    questionCounter = 0
-    score = 0
-    remainingQuestions = [...questions]
-    getNewQuestion()
-}
+    questionCounter = 0;
+    score = 0;
+    remainingQuestions = [...questions];
+    getNewQuestion();
+};
 /** grabs a new question if the remaining questions is 0 or the question counter is higher than the set maxQuestions variable (10) it will store your score and return you to the finished page**/
 getNewQuestion = () => {
     if(remainingQuestions.length === 0 || questionCounter > maxQuestions ){
-        localStorage.setItem('recentScore', score)
-        return window.location.assign('finished.html')
+        localStorage.setItem('recentScore', score);
+        return window.location.assign('finished.html');
     }
 
-questionCounter++ 
+questionCounter++ ;
 
 /** Adds text to the progress bar with your current question of the max questions eg 5 of 10**/
-progressBarText.innerText = `Question ${questionCounter} of ${maxQuestions}`
+progressBarText.innerText = `Question ${questionCounter} of ${maxQuestions}` ;
 
 /** gives the progress bar a width with the percentage of progress ie questions/maxQuestions**/
-progressFull.style.width = `${(questionCounter/maxQuestions) * 100}%`
+progressFull.style.width = `${(questionCounter/maxQuestions) * 100}%` ;
 
 /** gives the progress bar a width with the percentage of progress ie questions/maxQuestions**/
-const questionsIndex = Math.floor(Math.random() * remainingQuestions.length)
-currentQuestion = remainingQuestions[questionsIndex]
-question.innerText = currentQuestion.question
+const questionsIndex = Math.floor(Math.random() * remainingQuestions.length) ;
+currentQuestion = remainingQuestions[questionsIndex] ;
+question.innerText = currentQuestion.question ;
 
 
 choices.forEach(choice => {
-    const number = choice.dataset['number']
-    choice.innerText = currentQuestion['choice' + number]
-})
+    const number = choice.dataset['number'] ;
+    choice.innerText = currentQuestion['choice' + number] ;
+}) ;
 /*Removes 1 number from the number of remaining questions */
-remainingQuestions.splice(questionsIndex, 1)
+remainingQuestions.splice(questionsIndex, 1) ;
 
 acceptAnswers = true
 
-}
+} ;
 
 choices.forEach(choice => {
     choice.addEventListener('click', e =>{
-        if(!acceptAnswers) return
+        if(!acceptAnswers) return ;
 
-        acceptAnswers = false
-        const clickedChoice = e.target
+        acceptAnswers = false ;
+        const clickedChoice = e.target ;
         const clickedAnswer = clickedChoice.dataset['number']
 
-        let classApplied = clickedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        let classApplied = clickedAnswer == currentQuestion.answer ? 'correct' : 'incorrect' ;
 
         if(classApplied =='correct'){
-            incrementScore(scorePoints)
+            incrementScore(scorePoints) ;
         }
 
-        clickedChoice.parentElement.classList.add(classApplied)
+        clickedChoice.parentElement.classList.add(classApplied) ;
 
         setTimeout(()=> {
-            clickedChoice.parentElement.classList.remove(classApplied)
-            getNewQuestion()
-        } ,400)
-    } )
+            clickedChoice.parentElement.classList.remove(classApplied) ;
+            getNewQuestion() ;
+        } ,400) ;
+    } ) ;
 
-})
+}) ;
 
 incrementScore= num =>{
-    score +=num
-    scoreText.innerText = score
-}
+    score +=num ;
+    scoreText.innerText = score ;
+} ;
 
 
-
-startQuiz()
+startQuiz() ;
